@@ -23,11 +23,8 @@ function http_request($url){
     return $output;
 }
 
-$profile = http_request("https://indonesia-public-static-api.vercel.app/api/heroes");
+$profile1 = http_request("https://indonesia-public-static-api.vercel.app/api/heroes");
 
 // ubah string JSON menjadi array
-$profile = json_decode($profile, TRUE);
+$profile = json_decode($profile1, TRUE);
 
-echo "<pre>";
-print_r($profile);
-echo "</pre>";
